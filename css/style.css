@@ -1206,9 +1206,6 @@ ol {
     row-gap: 48px;
     column-gap: 24px;
   }
-  .portfolio-main_link {
-    width: calc((100% - 48px) / 3);
-  }
   /****************MAIN PORTFOLIO***************/
 
   /****************MAIN FOOTER***************/
@@ -1217,8 +1214,6 @@ ol {
   }
   .footer-content {
     gap: unset;
-  }
-  .tablet-position {
   }
   .footer-info {
     margin-right: 120px;
