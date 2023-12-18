@@ -109,7 +109,11 @@ ol {
 }
 
 .mobile-menu-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 72px;
+  padding-bottom: 40px;
 }
 
 .mobile-menu-close-btn {
@@ -150,8 +154,10 @@ ol {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  padding-top: 72px;
-  padding-bottom: 168px;
+}
+
+.mobile-menu-navigation {
+  margin-bottom: auto;
 }
 
 .mobile-menu-link {
@@ -170,7 +176,7 @@ ol {
 }
 
 .mobile-menu-adress {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .mobile-menu-social-list {
@@ -203,7 +209,6 @@ ol {
   align-items: center;
   padding: 0px;
   gap: 40px;
-  margin-bottom: 40px;
 }
 
 .mobile-social-media_list {
@@ -241,13 +246,15 @@ ol {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/mobile-bg.jpg);
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  height: 432px;
+  height: auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -270,9 +277,8 @@ ol {
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #fff;
-  padding: 72px 0;
   max-width: 169px;
-  margin: 0 auto;
+  margin: 0 auto 72px auto;
 }
 
 .main-hero_btn {
@@ -388,7 +394,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .social-media {
@@ -461,7 +467,6 @@ ol {
 .portfolio-position {
   position: relative;
   overflow: hidden;
-  width: 288px;
 }
 
 .portfolio-main_link:hover .portfolio-position_image,
@@ -521,6 +526,10 @@ ol {
   gap: 72px;
 }
 
+.footer-info {
+  margin-bottom: 72px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -544,7 +553,6 @@ ol {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-align: left;
-  margin-bottom: 72px;
 }
 
 .footer-title {
@@ -905,6 +913,9 @@ ol {
     justify-content: space-between;
     margin: 0;
   }
+  .header-main {
+    padding: 12px 0;
+  }
   .logo {
     margin-right: 120px;
   }
@@ -942,7 +953,7 @@ ol {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-    bottom: -px;
+    bottom: 3px;
     left: 0;
     display: block;
   }
@@ -952,7 +963,6 @@ ol {
   .address-info {
     display: flex;
     flex-direction: column;
-    gap: 12px;
   }
   .address-info_link {
     font-size: 12px;
@@ -976,6 +986,8 @@ ol {
       ),
       url(../images/tablet-bg.jpg);
     padding: 112px 0;
+    max-width: 768px;
+    height: auto;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -996,8 +1008,7 @@ ol {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-    margin: 0 auto;
-    padding: 0 0 36px 0;
+    margin: 0 auto 36px auto;
   }
   /****************TABLET HERO***************/
 
@@ -1013,6 +1024,7 @@ ol {
   }
   .info-main_text {
     height: 72px;
+    text-align: center;
   }
   /****************TABLET INFO***************/
 
@@ -1060,6 +1072,7 @@ ol {
   }
   .footer-info {
     margin-right: 24px;
+    margin: 0 24px 0 0;
   }
   .footer-modal {
     display: flex;
@@ -1093,6 +1106,12 @@ ol {
   }
 
   /****************MAIN HEADER***************/
+  .logo {
+    margin-right: 76px;
+  }
+  .main-hero_text {
+    margin-bottom: 48px;
+  }
   .header-main {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1123,7 +1142,7 @@ ol {
       url(../images/people-office-1.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
+    max-width: 1400px;
     height: auto;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
@@ -1177,6 +1196,7 @@ ol {
     color: #434455;
     width: 264px;
     font-size: 16px;
+    text-align: left;
   }
   /****************MAIN INFO***************/
 
@@ -1205,6 +1225,9 @@ ol {
   .portfolio-main {
     row-gap: 48px;
     column-gap: 24px;
+  }
+  .portfolio-main_link {
+    width: calc((100% - 48px) / 3);
   }
   /****************MAIN PORTFOLIO***************/
 
